@@ -9,11 +9,11 @@ const Banner = () => {
       <div
         className='container mx-auto'>
         <div
-          className='grid grid-cols-2 gap-x-0 items-center'>
-          <img src={Model} alt="" loading='lazy' />
+          className='grid md:grid-cols-2 gap-x-0 gap-y-6 items-center'>
+          <img src={Model} alt="" loading='lazy' className='max-w-96 mx-auto md:max-w-full'/>
           {/* Content Container */}
-          <div className='text-mn-gray-banner'>
-            <h1 className='mb-8 text-8xl font-black text-center'>
+          <div className='mx-auto text-mn-gray-banner'>
+            <h1 className='mb-8 text-7xl md:text-8xl font-black text-center'>
               MODEL TWO</h1>
             <p className='mb-8 text-2xl text-center'>
               The Model Two is the best MyNode package! It includes the MyNode software, support and our most powerful hardware.
@@ -23,7 +23,7 @@ const Banner = () => {
               <p className='me-4'>|</p>
               <p className='font-black text-white relative me-4'>$499</p>
             </div>
-            <button className='block mx-auto px-11 py-6 bg-gradient-to-t from-mn-orange to-mn-orange-gradient text-black text-2xl font-bold rounded-xl  hover:from-mn-black hover:to-mn-black text-mn-black hover:text-white hover:border-2 hover:border-mn-orange-gradient transition-all'>Order Now</button>
+            <a href='https://mynodebtc.com/order/two' className='flex w-fit mx-auto px-11 py-6 bg-gradient-to-t from-mn-orange to-mn-orange-gradient text-black text-2xl font-bold rounded-xl  hover:from-mn-black hover:to-mn-black text-mn-black hover:text-white hover:border-2 hover:border-mn-orange-gradient transition-all'>Order Now</a>
           </div>
         </div>
       </div>

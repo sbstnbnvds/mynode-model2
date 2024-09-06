@@ -160,14 +160,14 @@ const additionalFeaturesList = [
 
 
 const gridComponent = ({ img, text }) => {
-  return <div className="p-6 flex items-center bg-card-color border-2 border-card-border rounded-2xl text-3xl font-normal">
+  return <div className="p-6 flex items-center bg-card-color border-2 border-card-border rounded-2xl text-2xl lg:text-3xl font-normal">
     <img className='me-6' src={img} alt="" />
     <p>{text}</p>
   </div>
 }
 
 const gridBlockComponent = ({ list }) => {
-  return <div className="grid grid-cols-2 gap-y-6 gap-x-16 mb-20">
+  return <div className="grid sm:grid-cols-2 gap-y-6 gap-x-16 mb-20">
     {list.map((item) => gridComponent({ ...item }))}
 
   </div>
@@ -176,28 +176,28 @@ const gridBlockComponent = ({ list }) => {
 const Features = () => {
   return (
     <div>
-      <h2 className='text-center text-8xl font-black mb-12'>Features</h2>
-      <div className="container mx-auto px-20">
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-5xl font-bold'>
+      <h2 className='text-center text-7xl lg:text-8xl font-black mb-12'>Features</h2>
+      <div className="container mx-auto px-4 lg:px-20">
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
           <h3>Core Features</h3>
         </div>
         {gridBlockComponent({ list: coreList })}
 
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
           <h3>Bitcoin Apps</h3>
         </div>
         {gridBlockComponent({ list: BTCAppsList })}
 
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
           <h3>Lightning Apps</h3>
         </div>
         {gridBlockComponent({ list: LightningAppsList })}
 
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
           <h3>Other Apps</h3>
         </div>
         {gridBlockComponent({ list: otherAppsList })}
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
           <h3>Additional Features</h3>
         </div>
         {gridBlockComponent({ list: additionalFeaturesList })}

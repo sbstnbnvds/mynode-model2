@@ -51,7 +51,7 @@ const RunYourOwn = () => {
   return (
     <div>
       <h2 className='text-5xl text-center font-bold mb-20'>Run your own Bitcoin node</h2>
-      <div className='grid grid-cols-3 gap-x-32 gap-y-16 container mx-auto px-20 mb-40'>
+      <div className='grid sm:grid-cols-2 gap-x-4 lg:grid-cols-3 lg:gap-x-32 gap-y-16 container mx-auto px-4 lg:px-20 mb-40'>
         {gridList.map( (value, index) => gridComponent({...value}))}
       </div>
     </div>
