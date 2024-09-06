@@ -1,0 +1,6 @@
+/* Included */
+/* Background Gradient */
+
+#included {
+  background: radial-gradient(45% 60% at 50% 50%, #4B4B4B 0%, #15171A 59%);
+}
