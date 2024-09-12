@@ -176,28 +176,28 @@ const gridBlockComponent = ({ list }) => {
 const Features = () => {
   return (
     <div>
-      <h2 className='text-center text-7xl lg:text-8xl font-black mb-12'>Features</h2>
+      <h2 className='text-center text-6xl font-bold mb-12'>Features</h2>
       <div className="container mx-auto px-4 lg:px-20">
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl font-semibold'>
           <h3>Core Features</h3>
         </div>
         {gridBlockComponent({ list: coreList })}
 
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl font-semibold'>
           <h3>Bitcoin Apps</h3>
         </div>
         {gridBlockComponent({ list: BTCAppsList })}
 
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl font-semibold'>
           <h3>Lightning Apps</h3>
         </div>
         {gridBlockComponent({ list: LightningAppsList })}
 
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl font-semibold'>
           <h3>Other Apps</h3>
         </div>
         {gridBlockComponent({ list: otherAppsList })}
-        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl lg:text-5xl font-bold'>
+        <div className='px-12 py-6 mb-10 bg-card-color border-2 border-card-border rounded-2xl text-4xl font-semibold'>
           <h3>Additional Features</h3>
         </div>
         {gridBlockComponent({ list: additionalFeaturesList })}

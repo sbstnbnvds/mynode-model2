@@ -41,17 +41,17 @@ const Included = () => {
 
   return (
     <div id='included'>
-      <h2 className='mb-20 text-7xl font-bold text-center'>Included</h2>
+      <h2 className='mb-20 text-6xl font-bold text-center'>Included</h2>
       {/* Content */}
-      <div className='container lg:px-48 mx-auto mb-8'>
-        <img className='block mx-auto mb-12'
+      <div className='container lg:px-32 mx-auto mb-8'>
+        <img className='block mx-auto mb-12 md:px-12'
           src={asset} alt="" loading='lazy' />
 
         <div className='grid sm:grid-cols-2 gap-6 mb-24 px-6 sm:px-0'>
           {includesList.map((element, index) => <div className='flex items-center'>
             <img className='me-4'
               src={element.img} alt="" />
-            <p className='text-2xl'>
+            <p className='text-xl'>
               {element.text}</p></div>)}
 
         </div>
