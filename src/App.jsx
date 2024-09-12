@@ -13,11 +13,11 @@ import Features from './components/Features'
 
 function App() {
 
-  return (
+  return (<>
+    <Navbar />
     <div
-      className=''>
+      className='px-8'>
 
-      <Navbar />
       <Banner />
       <Section1 />
       <Included />
@@ -27,6 +27,7 @@ function App() {
       <Image />
       <Features />
     </div>
+  </>
   )
 }
 

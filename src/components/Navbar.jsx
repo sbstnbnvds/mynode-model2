@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href="https://mynodebtc.com/">
           <img src={logo} alt="logo" />
         </a>
-        <div className='hidden sm:flex gap-x-4'>
+        <div className='hidden sm:flex items-center gap-x-4'>
           <a href="https://mynodebtc.com/download" className='px-3 py-2 border-2 hover:border-mn-black hover:text-mn-black hover:bg-white rounded-lg transition-all'>
             Download
           </a>
@@ -26,8 +26,8 @@ const Navbar = () => {
         </div>
         <FontAwesomeIcon icon={faBars} className='sm:hidden' onClick={() => { setActiveMenu(!activeMenu) }} />
 
-        <div className={'absolute h-full bg-mn-black pe-4 pt-4 inset-y-0 right-0 transition-all ' + (activeMenu ? '' : 'hidden')}>
-          <div className='bg-mn-black ps-4 flex flex-col gap-y-5 '>
+        <div className={'absolute h-full bg-mn-black pt-4 inset-y-0 right-0 transition-all ' + (activeMenu ? '' : 'hidden')}>
+          <div className='bg-mn-black ps-4 pe-4 pb-4 flex flex-col gap-y-5 '>
 
             <FontAwesomeIcon icon={faXmark} className='' onClick={() => { setActiveMenu(!activeMenu) }} />
             <a href="https://mynodebtc.com/download" className='px-3 py-2 border-2 hover:border-mn-black hover:text-mn-black hover:bg-white rounded-lg transition-all'>

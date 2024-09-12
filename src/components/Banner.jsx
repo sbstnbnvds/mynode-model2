@@ -15,7 +15,7 @@ const Banner = () => {
           <div className='mx-auto text-mn-gray-banner'>
             <h1 className='mb-8 text-7xl md:text-8xl font-black text-center'>
               MODEL TWO</h1>
-            <p className='mb-8 text-2xl text-center'>
+            <p className='mb-8 text-2xl max-w-full text-center'>
               The Model Two is the best MyNode package! It includes the MyNode software, support and our most powerful hardware.
             </p>
             <div className="flex justify-center mb-10 text-5xl">
