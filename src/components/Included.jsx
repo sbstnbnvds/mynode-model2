@@ -43,11 +43,11 @@ const Included = () => {
     <div id='included'>
       <h2 className='mb-20 text-6xl font-bold text-center'>Included</h2>
       {/* Content */}
-      <div className='container lg:px-32 mx-auto mb-8'>
-        <img className='block mx-auto mb-12 md:px-12'
+      <div className='container mx-auto mb-8'>
+        <img className='block mx-auto mb-12 w-full max-w-2xl'
           src={asset} alt="" loading='lazy' />
 
-        <div className='grid sm:grid-cols-2 gap-6 mb-24 px-6 sm:px-0'>
+        <div className='grid sm:grid-cols-2 gap-y-6 sm:gap-x-8 md:gap-x-36 lg:gap-x-36 mb-24 px-6 sm:px-0 lg:px-32 xl:px-60 max-w-7xl mx-auto'>
           {includesList.map((element, index) => <div className='flex items-center'>
             <img className='me-4'
               src={element.img} alt="" />

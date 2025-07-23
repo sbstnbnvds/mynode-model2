@@ -5,12 +5,12 @@ import Model from '../assets/product model.png'
 const Banner = () => {
   return (
     <div id='banner'
-      className='md:mt-4 lg:mt-0 px-2'>
+      className='md:mt-4 lg:mt-16'>
       <div
         className='container mx-auto'>
         <div
           className='grid md:grid-cols-2 gap-x-0 gap-y-6 items-center'>
-          <img src={Model} alt="" loading='lazy' className='w-full mx-auto max-w-96 px-16 sm:px-0 md:max-w-sm'/>
+          <img src={Model} alt="" loading='lazy' className='w-full mx-auto max-w-96 px-16 md:px-0 max-w-96 md:max-w-80'/>
           {/* Content Container */}
           <div className='mx-auto text-mn-gray-banner'>
             <h1 className='mb-8 text-5xl sm:text-7xl font-black text-center'>
@@ -23,7 +23,7 @@ const Banner = () => {
               <p className='me-4 hidden sm:block'>|</p>
               <p className='font-black text-white relative me-4'>$499</p>
             </div>
-            <a href='https://mynodebtc.com/order/two' className='flex w-fit mx-auto px-11 py-6 bg-gradient-to-t from-mn-orange to-mn-orange-gradient text-black text-xl font-bold rounded-xl  hover:from-mn-black hover:to-mn-black text-mn-black hover:text-white hover:border-2 hover:border-mn-orange-gradient transition-all'>Order Now</a>
+            <a href='https://mynodebtc.com/order/two' className='flex w-fit mx-auto px-11 py-6 bg-gradient-to-t from-mn-orange to-mn-orange-gradient text-black text-xl font-bold rounded-xl  hover:from-mn-black hover:to-mn-black text-mn-black hover:text-white border-2 hover:border-2 border-mn-black hover:border-mn-orange-gradient transition-all'>Order Now</a>
           </div>
         </div>
       </div>

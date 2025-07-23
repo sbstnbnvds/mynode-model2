@@ -16,7 +16,7 @@ function App() {
   return (<>
     <Navbar />
     <div
-      className='sm:px-12'>
+      className=''>
 
       <Banner />
       <Section1 />
